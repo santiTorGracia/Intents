@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">IntentExercise</string>
+    <string name="login_email">email</string>
+    <string name="login_password">password</string>
+    <string name="login_login">Log in</string>
+    <string name="login_register">Register new user</string>
+    <string name="login_success">Log in successful</string>
+    <string name="login_password_length">The password has to contain at least 8 characters.</string>
+    <string name="login_email_invalid">Invalid email address</string>
+    <string name="register_email">email</string>
+    <string name="register_password">password</string>
+    <string name="register_password_repeat">repeat password</string>
+    <string name="register_birth_date">Birth Date</string>
+    <string name="register_register">Register</string>
+    <string name="register_gender">Gender: </string>
+    <string name="register_repeat_password_error">The passwords don\'t match.</string>
+    <string name="register_gender_not_selected">A gender must be selected.</string>
+    <string name="register_birth_date_format">%1$s/%2$s/%3$d</string>
+</resources>
