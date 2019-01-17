@@ -53,7 +53,7 @@ class RegisterActivity : AppCompatActivity() {
 
     private fun setInitialDate() {
         val date = getCurrentDate()
-        setBirthDate(date.dayOfMonth, date.monthValue, date.year - 18)
+        setBirthDate(date.dayOfMonth, date.monthValue, date.year)
     }
 
     private fun setBirthDate(dayOfMonth: Int, month: Int, year: Int) {
@@ -85,7 +85,7 @@ class RegisterActivity : AppCompatActivity() {
     private fun checkBirthDate() {
         val format = DateTimeFormatter.ofPattern("dd/MM/yyyy", Locale.ENGLISH)
         val date = LocalDate.parse(register_birth_date.text.toString(), format)
-        if (getCurrentDate().minusYears(18).plusDays(1).isBefore(date)) {
+        if (getCurrentDate().minusYears(18).isBefore(date)) {
             fieldsOk = false
             register_birth_date.error = "You must be over 18 to use the app."
         }
